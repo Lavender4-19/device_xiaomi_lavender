@@ -174,8 +174,8 @@ ro.vendor.sensors.mot_detect=true
 # SurfaceFlinger
 ro.surface_flinger.has_wide_color_display=true
 
-# SoC
-ro.soc.manufacturer=Qualcomm
+# Set system properties identifying the chipset
+ro.soc.manufacturer=QTI
 ro.soc.model=SDM660
 
 # Time
