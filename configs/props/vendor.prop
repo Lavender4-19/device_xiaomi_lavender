@@ -121,12 +121,6 @@ vendor.display.enable_default_color_mode=1
 vendor.gralloc.enable_fb_ubwc=1
 ro.hardware.egl=adreno
 ro.hardware.vulkan=sdm660
-sys.boe_td4320_length=42
-sys.boe_td4320_offset=-9
-sys.shenchao_nt36672a_length=38
-sys.shenchao_nt36672a_offset=-10
-sys.tianma_nt36672a_length=42
-sys.tianma_nt36672a_offset=6
 
 # DRM Service
 drm.service.enabled=true
