@@ -1,0 +1,6 @@
+device/xiaomi 
+kernel/xiaomi 
+vendor/xiaomi 
+hardware/qcom-caf/sdm660/display 
+hardware/qcom-caf/sdm660/audio
+hardware/qcom-caf/sdm660/media

@@ -24,11 +24,21 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common Arrow stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common ProjectElixir stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# Elixir stuffs
+IS_PHONE := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ACORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+ELIXIR_MAINTAINER := Coptan
+ELIXIR_BUILD_TYPE := OFFICIAL
 
 # Device identifier
-PRODUCT_NAME := arrow_lavender
+PRODUCT_NAME := aosp_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
