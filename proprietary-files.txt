@@ -1522,11 +1522,11 @@ vendor/lib64/libtinyxml2_1.so|ba981e332895a053a67fc54a8190365a3ad37f2d
 vendor/lib/libtinyxml.so|9cbc72d20c0a9dd2a118726f6be22bb3a90baf8d
 vendor/lib64/libtinyxml.so|576e4bdc5e898c74ced22d45faf789f74c766f42
 
-# Graphics (SDM) - from LA.UM.8.2.r1-07500-sdm660.0
-vendor/lib/libsdm-color.so|6dc7253b7c3b950777d0d4ece05db7b45a2d294f
-vendor/lib/libsdmextension.so|dd1b0812e134ff75994812732954fa03d7eb4414
-vendor/lib64/libsdm-color.so|dc3e17f9858e4578c69fd597b21f0dd4f6f52794
-vendor/lib64/libsdmextension.so|133db0462e62fa331eb622b02528b5cdcc08a446
+# Graphics (SDM) - from lavender
+vendor/lib/libsdm-color.so|2856bf71af603076b23d4c206dacba7c82350387
+vendor/lib/libsdmextension.so|7b7ccd38317ab0e8dc938412ae79385f5331697a
+vendor/lib64/libsdm-color.so|ed022cfcc1546c11b82991986e0a938464400858
+vendor/lib64/libsdmextension.so|c2027b4778cd820e3eccc29a42e7256762c24a5b
 
 # Graphics (Vulkan) - from lavender
 vendor/lib/hw/vulkan.sdm660.so|704d421e098d832de8049315df8951202a8bcf26
