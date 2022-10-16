@@ -21,28 +21,42 @@
 # definition file).
 #
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common ProjectElixir stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common RiceDroid stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Elixir stuffs
-IS_PHONE := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ACORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_FACE_UNLOCK_SUPPORTED := true
-ELIXIR_MAINTAINER := Coptan
-ELIXIR_BUILD_TYPE := OFFICIAL
+# Boot Animation
+SUSHI_BOOTANIMATION := 1080
+
+# riceDroid Flags
+RICE_MAINTAINER := FBRIIIII
+RICE_OFFICIAL := true
+
+# Pixel
+WITH_GMS := true
+TARGET_GAPPS_ARCH := arm64
+
+# Package Type (By default it says AOSP,lets make it Vanilla instead)
+RICE_PACKAGE_TYPE := Vanilla
+
+# Spoof build description/fingerprint as pixel device
+TARGET_USE_PIXEL_FINGERPRINT := true
 
 # Device identifier
-PRODUCT_NAME := aosp_lavender
+PRODUCT_NAME := lineage_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 TARGET_VENDOR_PRODUCT_NAME := lavender
